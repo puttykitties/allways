@@ -1,0 +1,131 @@
+div.cs-skin-slide {
+	color: #000;
+	font-size: 40px;
+	width: 100%;
+}
+
+div.cs-skin-slide::before {
+	content: '';
+	background: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	transition: transform 0.3s;
+}
+.cs-options > ul > li:first-child { display: none; }
+
+.cs-skin-slide.cs-active::before {
+	transform: scale3d(1,4,1);
+	box-shadow: 0 8px 16px 0 rgba(38, 34, 41, .24);
+}
+.cs-loc.cs-skin-slide.cs-active::before {
+	transform: scale3d(1,6,1);
+}
+
+.cs-skin-slide > span {
+	height: 48px;
+	line-height: 48px;
+	transition: text-indent 0.3s, opacity 0.3s;
+}
+
+.cs-skin-slide.cs-active > span {
+	text-indent: -290px;
+	opacity: 0;
+}
+
+.cs-skin-slide > span::after,
+.cs-skin-slide.cs-active > span::after {
+	font-family: 'icomoon';
+	font-size: 32px;
+	content: '\e941';
+	color: #16C4CF;
+	backface-visibility: hidden;
+}
+
+.cs-skin-slide.cs-active > span::after {
+	transform: translate3d(0,-50%,0);
+}
+
+.cs-skin-slide .cs-options {
+	background: transparent;
+	width: 70%;
+	padding: 24px 0;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+}
+
+.cs-skin-slide .cs-options li {
+	opacity: 0;
+	transform: translate3d(30%,0,0);
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.cs-skin-slide.cs-active .cs-options li {
+	transform: translate3d(0,0,0);
+	opacity: 1;
+}
+
+.cs-skin-slide.cs-active .cs-options li:first-child {
+	transition-delay: 0.05s;
+}
+
+.cs-skin-slide.cs-active .cs-options li:nth-child(2) {
+	transition-delay: 0.1s;
+}
+
+.cs-skin-slide.cs-active .cs-options li:nth-child(3) {
+	transition-delay: 0.15s;
+}
+
+.cs-skin-slide.cs-active .cs-options li:nth-child(4) {
+	transition-delay: 0.2s;
+}
+
+.cs-skin-slide.cs-active .cs-options li:nth-child(5) {
+	transition-delay: 0.25s;
+} /* more options need more delay declaration */
+
+.cs-skin-slide .cs-options li span {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+	font-size: 50%;
+	padding: 6px 0;
+}
+
+.cs-skin-slide .cs-options li span:hover,
+.cs-skin-slide .cs-options li.cs-focus span,
+.cs-skin-slide .cs-options li.cs-selected span {
+	color: #16C4CF;
+	background: transparent;
+}
+
+.cs-skin-slide .cs-selected span::after {
+	content: '';
+}
+
+[class^="icon-"] span:before,
+[class*=" icon-"] span:before {
+	font-family: 'icomoon';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate3d(0,-50%,0);
+	font-size: 1.5em;
+}
+
+.icon-arrival span::before {
+	content: '\e9de';
+}
+
+.icon-departure span::before {
+	content: '\e9e0';
+}
+
+.icon-transit span::before {
+	content: '\e915';
+}

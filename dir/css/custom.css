@@ -1,0 +1,42 @@
+/* width */::-webkit-scrollbar {width: 12px;}
+/* Track */::-webkit-scrollbar-track {background: #FAFAFA;}
+/* Handle */::-webkit-scrollbar-thumb {background: #16c4cf;}
+/* Handle on hover */::-webkit-scrollbar-thumb:hover {background: #000;}
+.burger {height: 3em;width: 3em;position: relative;font-size: 12px;cursor: pointer;transition: 0.2s all;-webkit-tap-highlight-color: transparent;}.burger .burger-lines:after {left: 0;top: -1em;}.burger .burger-lines:before {left: 1em;top: 1em;}.burger:after {content: '';display: block;position: absolute;height: 150%;width: 150%;top: -25%;left: -25%;}.burger .burger-lines {top: 50%;margin-top: -0.125em;}.burger .burger-lines, .burger .burger-lines:after, .burger .burger-lines:before {pointer-events: none;display: block;content: '';width: 100%;border-radius: 0.25em;background-color: #3F2A56;height: 0.25em;position: absolute;transform: rotate(0);}.burger .burger-lines:after {left: 0;top: -1em;}.burger .burger-lines:before {left: 1em;top: 1em;}.burger.burger-squeeze .burger-lines, .burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {transition: 0.2s top 0.2s, 0.1s left, 0.2s transform, 0.4s background-color 0.2s;}.burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {width: 2em;}.burger.burger-squeeze.open .burger-lines, .burger.burger-squeeze.open .burger-lines:after, .burger.burger-squeeze.open .burger-lines:before {transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s transform 0.15s;background-color: #fff;}.burger.burger-squeeze.open .burger-lines {background-color: transparent;}.burger.burger-squeeze.open .burger-lines:before, .burger.burger-squeeze.open .burger-lines:after {left: 0.5em;top: 0px;}.burger.burger-squeeze.open .burger-lines:before {transform: rotate(-45deg);}.burger.burger-squeeze.open .burger-lines:after {transform: rotate(45deg);}
+.a-sidebar-menu-link.w--current:after {content: '';width: 110px;height: 4px;border-radius: 4px;background-color: #16C4CF;position: absolute;top: 50%;left: -64px;transform: translateX(-50%);}
+.a-hero-span:before {content: '';position: absolute;z-index: -1;top: 50%;left: -32px;right: -32px;bottom: 0;background-color: #16C4CF;}
+.a-hero-span.xa-section:before {top: 0;left: -32px;right: 72%;}
+@media only screen and (max-width: 1600px) {
+  .a-sidebar-menu-link {padding: 14px 0;font-size: 28px;line-height: 32px;}
+  .a-booker {margin-right: 0;padding: 16px;}
+  .a-hero-h1 {font-size: 80px;line-height: 88px;}
+}
+@media only screen and (max-width: 1367px) {
+  .a-hero-h1 {font-size: 64px;line-height: 72px;}
+  .a-hero-lead-text {font-size: 18px;line-height: 26px;}
+}
+@media only screen and (max-width: 1280px) {
+  .a-sidebar-menu-link {padding: 12px 0;font-size: 24px;line-height: 28px;}
+}
+@media only screen and (max-width: 1024px) {
+	.a-sidebar-menu-link.w--current:after {width: 24px;left: -24px}
+  .a-booker-col.xa-type {width: auto;}
+  .a-hero-container {margin-left: auto;}
+  .a-hero-slider-overlay {padding: 24px;}
+  .a-hero-slider-pagi {padding-right: 24px;}
+  .a-hero-h1 {font-size: 56px;line-height: 64px;}
+  .a-hero-lead-text {font-size: 16px;line-height: 22px;}
+}
+@media only screen and (max-width: 415px) {
+	.a-sidebar-menu-link.w--current:after {width: 16px;left: -16px;}
+  .a-hero-slider-overlay {padding: 16px;}
+  .a-hero-slider-pagi {padding-right: 16px;}
+  .a-hero-h1 {font-size: 40px;line-height: 48px;}
+}
+
+.ui-datepicker { margin-left: 24px!important; }
+.ui-widget-header { border: none!important; background: none!important; }
+.ui-widget.ui-widget-content,.ui-widget-content { border: none!important; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active { border: none!important; }
+.ui-datepicker td span, .ui-datepicker td a { text-align: center!important; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { background: #3f2a56!important; color: #fff!important; }
