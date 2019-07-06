@@ -1,2 +1,2 @@
-# allways
+# Allways
 Allways website dependencies.
